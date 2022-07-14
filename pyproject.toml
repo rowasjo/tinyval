@@ -1,0 +1,35 @@
+[project]
+name = "tinyval"
+version = "0.1.0"
+authors = [
+    { name = "rowasjo" }
+]
+description = "Tinyval package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10.0"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "starlette",
+    "python-multipart"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "requests"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find] # beta feature
+where = ["src"]
+
+[tool.setuptools.package-data] # beta feature
+tinyval = ["openapi.yaml"]

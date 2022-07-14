@@ -1,0 +1,13 @@
+# Custom Dictionary Words
+ASGI
+crossorigin
+fsrepository
+hashutil
+openapi
+pytest
+rowasjo
+setuptools
+Starlette
+Tinyval
+uvicorn
+venv
